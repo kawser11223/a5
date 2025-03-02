@@ -23,6 +23,16 @@ document.getElementById('btn-comleted-1').addEventListener('click', function () 
     const subsValue = subs - 1;
 
     const totalSum = sum + 1;
+    const button = document.getElementById("btn-comleted-1");
+    if (button) {
+        button.disabled = true; 
+        button.classList.add('bg-slate-500');  
+    }
+
+    if (button) {
+        button.disabled = true; 
+        button.classList.add('bg-slate-500');  
+    }
 
     document.getElementById('subs-point').innerText = subsValue;
     document.getElementById('sum').innerText = totalSum;
@@ -55,6 +65,11 @@ document.getElementById('btn-comleted-2').addEventListener('click', function () 
     const subsValue = subs - 1;
 
     const totalSum = sum + 1;
+    const button = document.getElementById("btn-comleted-2");
+    if (button) {
+        button.disabled = true; 
+        button.classList.add('bg-slate-500');  
+    }
 
     document.getElementById('subs-point').innerText = subsValue;
     document.getElementById('sum').innerText = totalSum;
@@ -79,6 +94,11 @@ document.getElementById('btn-comleted-3').addEventListener('click', function () 
 
     `
     msg.className = 'p-2 bg-[#F4F7FF] mt-3 rounded-md';
+    const button = document.getElementById("btn-comleted-3");
+    if (button) {
+        button.disabled = true; 
+        button.classList.add('bg-slate-500');  
+    }
 
     showMsg.appendChild(msg);
 
@@ -88,7 +108,7 @@ document.getElementById('btn-comleted-3').addEventListener('click', function () 
 
     document.getElementById('subs-point').innerText = subsValue;
     document.getElementById('sum').innerText = totalSum;
-    document.getElementById("btn-comleted-3").setAttribute("disabled", true);
+    
 })
 document.getElementById('btn-comleted-4').addEventListener('click', function () {
 
@@ -115,10 +135,14 @@ document.getElementById('btn-comleted-4').addEventListener('click', function () 
     const subsValue = subs - 1;
 
     const totalSum = sum + 1;
+    const button = document.getElementById("btn-comleted-4");
+    if (button) {
+        button.disabled = true; 
+        button.classList.add('bg-slate-500');  
+    }
 
     document.getElementById('subs-point').innerText = subsValue;
     document.getElementById('sum').innerText = totalSum;
-    document.getElementById("btn-comleted-4").setAttribute("disabled", true);
 })
 document.getElementById('btn-comleted-5').addEventListener('click', function () {
 
@@ -145,10 +169,14 @@ document.getElementById('btn-comleted-5').addEventListener('click', function () 
     const subsValue = subs - 1;
 
     const totalSum = sum + 1;
+    const button = document.getElementById("btn-comleted-5");
+    if (button) {
+        button.disabled = true; 
+        button.classList.add('bg-slate-500');  
+    }
 
     document.getElementById('subs-point').innerText = subsValue;
     document.getElementById('sum').innerText = totalSum;
-    document.getElementById("btn-comleted-5").setAttribute("disabled", true);
 })
 document.getElementById('btn-comleted-6').addEventListener('click', function () {
 
@@ -178,7 +206,13 @@ document.getElementById('btn-comleted-6').addEventListener('click', function () 
 
     document.getElementById('subs-point').innerText = subsValue;
     document.getElementById('sum').innerText = totalSum;
-    document.getElementById("btn-comleted-6").setAttribute("disabled", true);
+    const button = document.getElementById("btn-comleted-6");
+
+    if (button) {
+        button.disabled = true; 
+        button.classList.add('bg-slate-500');  
+    }
+
     if (subs <= 1) {
         alert('congrates!!! You have completed all the crurrent task')
     }
@@ -208,3 +242,4 @@ const button = document.getElementById("color-btn");
 button.addEventListener("click", function () {
     document.body.style.backgroundColor = getRandomColor();
 });
+
