@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBoard</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-[#F4F7FF] max-w-7xl mx-auto">
+    <header class="bg-[#FFFFFF] rounded-2xl ">
+        <nav class="flex justify-between items-center mt-6 mx-7">
+            <div class="mt-10 relative flex items-center gap-2 w-9/12 mb-10">
+                <img class="w-8" src="assets/logo.png" alt="">
+                <h1 class="text-3xl text-[#00303C]">Dev<span class="font-bold">Board</span></h1>
+            </div>
+
+            <div class="flex justify-center items-center gap-2">
+                <button id="btn-back" class="rounded-lg text-center text-white cursor-pointer bg-[#3752FD] py-2 px-7">Back</button>
+
+            </div>
+        </nav>
+    </header>
+
+    <section class="justify-between items-center space-y-3 max-w-7xl mx-auto mt-6 mb-6">
+        <div class="bg-[#FFFFFF] rounded-xl">
+            <p class="p-2">Question-1: What are the different ways to select an element in the DOM?</p>
+            <p class="p-2">JavaScript-এ DOM Document Object Model থেকে এলিমেন্ট সিলেক্ট করার জন্য <br> নির্দিষ্ট id দেওয়া এলিমেন্ট সিলেক্ট করতে ব্যবহৃত হয়। <br>একই ক্লাসের সব এলিমেন্ট সিলেক্ট করতে ব্যবহৃত হয়। <br>একটি HTMLCollection রিটার্ন করে যা অ্যারের মতো কিন্তু পুরোপুরি অ্যারে নয়। <br>CSS সিলেক্টরের মতো স্টাইল ব্যবহার করে সব মিলছে এমন এলিমেন্টগুলোর লিস্ট NodeList রিটার্ন করে। <br>CSS সিলেক্টরের মতো স্টাইল ব্যবহার করে প্রথম ম্যাচিং এলিমেন্টটি সিলেক্ট করে।</p>
+        </div>
+        <div class="bg-[#FFFFFF] rounded-xl">
+            <p class="p-2">Question-2: What is the difference between innerHTML, innerText, and textContent ?</p>
+            <p class="p-2">যদি কোনো HTML ট্যাগ থাকে, তাহলে innerHTML সেট করলে সেই HTML প্রসেস হয় এবং ব্রাউজারে রেন্ডার হয়। <br>এটি HTML ট্যাগ ইগনোর করে সমস্ত টেক্সট রিটার্ন করে, এমনকি display: none থাকলেও</p>
+        </div>
+        <div class="bg-[#FFFFFF] rounded-xl">
+            <p class="p-2">Question-3: What is event delegation in the DOM?</p>
+            <p class="p-2">যখন একটি ইভেন্ট ঘটে, তখন সেটি Event Bubbling  এর মাধ্যমে parent element পর্যন্ত পৌঁছে যায়। আমরা যদি parent element-এ ইভেন্ট লিসেনার যুক্ত করি, তাহলে সেটি child elements-এর ইভেন্টও ধরতে পারবে।</p>
+        </div>
+        <div class="bg-[#FFFFFF] rounded-xl">
+            <p class="p-2">Question-4: What is event bubbling in the DOM?</p>
+            <p class="p-2">একটি ছোট এলিমেন্টে ইভেন্ট হলে, সেটি তার বড় parent এলিমেন্টগুলোতেও পৌঁছে যায়।</p>
+        </div>
+        <div class="bg-[#FFFFFF] rounded-xl">
+            <p class="p-2">Question-5: How do you create, add, and remove elements using JavaScript?</p>
+            <p class="p-2">নতুন এলিমেন্ট তৈরি<br>এলিমেন্টের ভিতরে টেক্সট যোগ <br>	
+                বিদ্যমান এলিমেন্টের মধ্যে নতুন এলিমেন্ট যোগ	 <br>
+                এলিমেন্ট মুছে ফেলা</p>
+        </div>
+    </section>
+    <script src="js/back.js"></script>
+</body>
+
+</html>
